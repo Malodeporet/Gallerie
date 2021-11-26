@@ -7,7 +7,7 @@ const Acceuil = () => {
         <div className="container">
 
             <div className="presentation">
-                <p>Je m'apelle Isabelle Paré, artiste et dentellière.
+                <p>Je m'apelle Isabelle Paré, dentellière du point d'Alençon.
                     Je vous propose aujourd'hui de découvrir mes oeuvres à travers mon site.
                 </p>
                 <p>Mes réalisations sont découpée en 3 catégorie :</p>

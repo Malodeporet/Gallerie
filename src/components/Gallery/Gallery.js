@@ -24,7 +24,6 @@ import Img19 from '../../assets/img19.jpeg';
 import Img20 from '../../assets/img20.jpeg';
 import Img21 from '../../assets/img21.jpeg';
 import Img22 from '../../assets/img22.jpeg';
-import Img23 from '../../assets/img23.jpeg';
 
 
 const Gallery = () => {
@@ -117,10 +116,7 @@ const Gallery = () => {
             id: 22,
             imgSrc: Img22,
         },
-        {
-            id: 23,
-            imgSrc: Img23,
-        },
+
     ]
     const [model, setModel] = useState(false);
     const [tempimgSrc, setTempImgSrc] = useState('');
@@ -131,6 +127,7 @@ const Gallery = () => {
     return (
         <>
         <h2 className="gallery-title">Gallerie</h2>
+        <h3 className="division-title">Dentelle</h3>
         <div class={model? "model open" : "model"}>
         <img src={tempimgSrc} />
         <CloseIcon onClick={() => setModel(false)}/>
