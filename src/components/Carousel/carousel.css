@@ -1,0 +1,17 @@
+.slider{
+    spaceBetween={0}
+            slidesPerView={1}
+            navigation
+            pagination={{ clickable: true }}
+            scrollbar={{ draggable: true }}
+            onSwiper={(swiper) => console.log(swiper)}
+            onSlideChange={() => console.log('slide change')}
+            loop={true}
+            style={{
+                width: '500px',
+                height: '600px',
+                marginTop: '50px',
+                borderRadius: '20px',
+                boxShadow: '0px 0px 19px 0px rgba(0,0,0,0.24)'
+            }}
+}
