@@ -1,14 +1,15 @@
 import React, { useState } from 'react';
 import './gallery.css';
 import CloseIcon from '@mui/icons-material/Close';
-import Carousel from '../Carousel/Carousel';
+
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from 'react-responsive-carousel';
 
 // Dentelle
 import Img1 from '../../assets/dentelle/img1.jpeg';
 import Img2 from '../../assets/dentelle/img2.jpeg';
 
 // Dessin de dentelle
-import Img3 from '../../assets/dessin-dentelle/img3.jpeg';
 import Img4 from '../../assets/dessin-dentelle/img4.jpeg';
 import Img5 from '../../assets/dessin-dentelle/img5.jpeg';
 import Img6 from '../../assets/dessin-dentelle/img6.jpeg';
@@ -18,10 +19,10 @@ import Img7 from '../../assets/dessin-dentelle/img7.jpeg';
 import Img8 from '../../assets/crayon-de-couleur/img8.jpeg';
 import Img9 from '../../assets/crayon-de-couleur/img9.jpeg';
 import Img10 from '../../assets/crayon-de-couleur/img10.jpeg';
-import Img11 from '../../assets/crayon-de-couleur/img11.jpeg';
+
 import Img12 from '../../assets/crayon-de-couleur/img12.jpeg';
 import Img13 from '../../assets/crayon-de-couleur/img13.jpeg';
-import Img14 from '../../assets/crayon-de-couleur/img14.jpeg';
+
 import Img15 from '../../assets/crayon-de-couleur/img15.jpeg';
 import Img16 from '../../assets/crayon-de-couleur/img16.jpeg';
 import Img17 from '../../assets/crayon-de-couleur/img17.jpeg';
@@ -30,6 +31,13 @@ import Img19 from '../../assets/crayon-de-couleur/img19.jpeg';
 import Img20 from '../../assets/crayon-de-couleur/img20.jpeg';
 import Img21 from '../../assets/crayon-de-couleur/img21.jpeg';
 import Img22 from '../../assets/crayon-de-couleur/img22.jpeg';
+
+
+// Dessin crayon de couleur
+// import Img23 from '../../assets/carousel/img23.jpeg';
+// import Img24 from '../../assets/carousel/img24.jpeg';
+// import Img25 from '../../assets/carousel/img25.jpeg';
+// import Img26 from '../../assets/carousel/img26.jpeg';
 
 
 const Gallery = () => {
@@ -44,10 +52,7 @@ const Gallery = () => {
         },]
 
     let dataDessin = [
-        {
-            id: 3,
-            imgSrc: Img3,
-        },
+        
         {
             id: 4,
             imgSrc: Img4,
@@ -79,20 +84,12 @@ const Gallery = () => {
             imgSrc: Img10,
         },
         {
-            id: 11,
-            imgSrc: Img11,
-        },
-        {
             id: 12,
             imgSrc: Img12,
         },
         {
             id: 13,
             imgSrc: Img13,
-        },
-        {
-            id: 14,
-            imgSrc: Img14,
         },
         {
             id: 15,
@@ -125,9 +122,8 @@ const Gallery = () => {
         {
             id: 22,
             imgSrc: Img22,
-        },
+        },]
 
-    ]
     const [model, setModel] = useState(false);
     const [tempimgSrc, setTempImgSrc] = useState('');
     const getImg = (imgSrc) => {
@@ -141,7 +137,7 @@ const Gallery = () => {
                 <img src={tempimgSrc} alt="" />
                 <CloseIcon onClick={() => setModel(false)} />
             </div>
-        
+
             <div class="division-title">
                 <h3>Dentelle</h3>
             </div>
@@ -153,15 +149,36 @@ const Gallery = () => {
                                 <img src={item.imgSrc} alt="" style={{ width: '100%' }} />
                             </div>
                         </div>
+
                     )
                 })}
             </div>
+            <p className="text-dentelle">Dentelle que j'ai réalisé à l'atelier national du point d'Alençon</p>
 
             <div class="division-title">
                 <h3>Dessin de Dentelle</h3>
             </div>
-            <div className="gallery">
             
+            <div className="carousel-wrapper">
+                <Carousel infiniteLoop useKeyboardArrows showArrows onClickItem>
+                    <div>
+                        <img src="../img-05.jpg" alt="" />
+                    </div>
+                    <div>
+                        <img src="../img-06.jpg" alt="" />
+                    </div>
+                    <div>
+                        <img src="../img-07.jpg" alt="" />
+                    </div>
+                    <div>
+                        <img src="../img-08.jpg" alt="" />
+                    </div>
+                    <div>
+                        <img src="../img-09.jpg" alt="" />
+                    </div>
+                </Carousel>
+            </div>
+            <div className="gallery">
                 {dataDessin.map((item, index) => {
                     return (
                         <div class="dessin-dentelle">
@@ -172,11 +189,27 @@ const Gallery = () => {
                     )
                 })}
             </div>
+            <div className="carousel-wrapper">
+                <Carousel infiniteLoop useKeyboardArrows showArrows onClickItem>
+                    <div>
+                        <img src="../img-01.jpg" alt="" />
+                    </div>
+                    <div>
+                        <img src="../img-02.jpg" alt="" />
+                    </div>
+                    <div>
+                        <img src="../img-03.jpg" alt="" />
+                    </div>
+                    <div>
+                        <img src="../img-04.jpg" alt="" />
+                    </div>
+                </Carousel>
+            </div>
 
             <div class="division-title">
                 <h3>Crayon de Couleur</h3>
             </div>
-            <Carousel />
+
             <div className="gallery">
                 {dataCrayonDeCouleur.map((item, index) => {
                     return (
