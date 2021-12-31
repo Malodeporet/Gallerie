@@ -1,28 +1,26 @@
 import React from 'react';
 import './acceuil.css';
-import Isa from '../../assets/isa.jpeg';
+import Isa from '../../assets/presentation2.jpg';
+import Isa2 from '../../assets/presentation3.jpg';
 
 const Acceuil = () => {
     return (
         <div className="container">
-
-            <div className="presentation">
-                <p>Je m'apelle Isabelle Paré, dentellière à l'atelier national du point d'Alençon.
-                    Je vous propose aujourd'hui de découvrir mes oeuvres à travers mon site.
+            <div data-aos="fade-right" data-aos-duration="2000" className="presentation">
+                <p className='first-p'>Je suis <strong>dentellière</strong> du Point d'Alençon depuis 1989. Je travaille à l'Atelier National du Point d'Alençon et je réalise aussi des pièces personnelles.
+                    Je vous propose aujourd'hui de découvrir mes oeuvres au travers de mon site.
                 </p>
-                <p>Mes réalisations sont découpée en 3 catégorie : Dentelle, dessin de dentelle et dessin crayon de couleur</p>
-                <p>La dentelle, les dessins de dentelle et les tableaux.
-                    is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                    when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                </p>
+                <p className='second-p'>Mes réalisations sont réparties en 3 catégories : </p>
+                <p><strong>Dentelle :</strong> J'utilise du fil de coton pour réaliser ma dentelle à l'aiguille.</p>
+                <p><strong>Dessin de dentelle :</strong> Je dessine à la plume avec une encre blanche.</p>
+                <p><strong>Dessin crayon de couleur :</strong> Je grave mon support que je colorie avec des crayons de couleur.</p>
             </div>
-            <div className="header-picture">
-                <img
-                    className="picture"
-                    src={Isa}
-                    alt="Isabelle"
-                /></div>
-        </div>
+
+            <div data-aos="zoom-out-down" data-aos-duration="2000" className="header-picture">
+                <img className="picture" src={Isa} alt="Isabelle" />
+                <img className="picture2" src={Isa2} alt="Isabelle" />
+            </div>
+        </div >
     );
 };
 

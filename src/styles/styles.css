@@ -1,12 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap");
 
 * {
-    padding: 0;
-    border: none;
-    outline: none;
-  }
-  
-  body {
-    background: black;
-    color: #18dcff;
-  }
+  padding: 0;
+  border: none;
+  outline: none;
+}
+
+body {
+  background: black;
+}
+
+strong {
+  color: #fff;
+}

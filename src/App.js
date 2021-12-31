@@ -4,7 +4,8 @@ import Navbar from './components/NavBar/Navbar';
 import Acceuil from './components/Acceuil/Acceuil';
 import Gallery from './components/Gallery/Gallery';
 import Contact from './components/Contact/Contact';
-import Footer from './components/Footer/Footer'
+import Footer from './components/Footer/Footer';
+
 
 
 function App() {
@@ -12,9 +13,9 @@ function App() {
     <Router>
       <Navbar />
       <Routes>
-        <Route element={<Acceuil/>} path='/' />
-        <Route element={<Gallery/>} path='/gallerie' />
-        <Route element={<Contact/>} path='/contact' />
+        <Route element={<Acceuil />} path='/' />
+        <Route element={<Gallery />} path='/gallerie' />
+        <Route element={<Contact />} path='/contact' />
       </Routes>
       <Footer />
     </Router>
