@@ -15,7 +15,7 @@ function Contact(props) {
         e.preventDefault();
 
         emailjs
-            .sendForm("service_0xjgx6j", "template_p4xqfdd", e.target, "user_tbl8K13EAGdr3VW9TT3fd")
+            .sendForm("service_t08bksv", "template_p4xqfdd", e.target, "user_tbl8K13EAGdr3VW9TT3fd")
             .then(
                 (result) => {
                     console.log(result.text);
