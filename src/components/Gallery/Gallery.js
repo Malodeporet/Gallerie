@@ -35,7 +35,7 @@ import Oeuf3 from '../../assets/dessin-dentelle/img15.jpg';
 import Poisson1 from '../../assets/dessin-dentelle/img16.jpg';
 import Poisson2 from '../../assets/dessin-dentelle/img17.jpg';
 import Poisson3 from '../../assets/dessin-dentelle/img18.jpg';
-import Poisson4 from '../../assets/dessin-dentelle/img19.jpg';
+// import Poisson4 from '../../assets/dessin-dentelle/img19.jpg';
 
 // Dessin crayon de couleur
 import Cr1 from '../../assets/crayon-de-couleur/img1.jpg';
@@ -165,10 +165,10 @@ const Gallery = () => {
             id: 44,
             imgSrc: Poisson3,
         },
-        {
-            id: 45,
-            imgSrc: Poisson4,
-        },
+        // {
+        //     id: 45,
+        //     imgSrc: Poisson4,
+        // },
     ]
 
     let dataCrayonDeCouleur = [
@@ -285,26 +285,28 @@ const Gallery = () => {
                 })}
             </div>
             <div className="carousel-wrapper">
-                <Carousel infiniteLoop useKeyboardArrows showArrows onClickItem>
-                    <div>
-                        <img src="../images/img6.jpg" alt="" />
-                    </div>
-                    <div>
-                        <img src="../images/img7.jpg" alt="" />
-                    </div>
-                    <div>
-                        <img src="../images/img8.jpg" alt="" />
-                    </div>
-                    <div>
-                        <img src="../images/img9.jpg" alt="" />
-                    </div>
-                    <div>
-                        <img src="../images/img10.jpg" alt="" />
-                    </div>
-                </Carousel>
+                <div><p className="mask">Masque de venise en réalisation</p>
+                    <Carousel infiniteLoop useKeyboardArrows showArrows onClickItem>
+                        <div>
+                            <img src="../images/img6.jpg" alt="" />
+                        </div>
+                        <div>
+                            <img src="../images/img7.jpg" alt="" />
+                        </div>
+                        <div>
+                            <img src="../images/img8.jpg" alt="" />
+                        </div>
+                        <div>
+                            <img src="../images/img9.jpg" alt="" />
+                        </div>
+                        <div>
+                            <img src="../images/img10.jpg" alt="" />
+                        </div>
+                    </Carousel>
+                </div>
             </div>
             <div class="division-title">
-                <h3 data-aos="flip-up"
+                <h3 data-aos="fade-down"
                     data-aos-easing="ease-out-cubic"
                     data-aos-duration="2000">
                     Dessin de Dentelle
@@ -365,9 +367,7 @@ const Gallery = () => {
                 </div>
             </div>
             <div class="division-title">
-                <h3 data-aos="flip-up"
-                    data-aos-easing="ease-out-cubic"
-                    data-aos-duration="2000">
+                <h3 data-aos="fade-down" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                     Crayon de Couleur
                 </h3>
             </div>
@@ -382,7 +382,7 @@ const Gallery = () => {
                     )
                 })}
             </div>
-        </div>
+        </div >
     )
 }
 
