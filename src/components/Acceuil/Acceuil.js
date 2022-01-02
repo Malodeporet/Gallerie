@@ -16,7 +16,7 @@ const Acceuil = () => {
                 <p><strong>Dessin crayon de couleur :</strong> Je grave mon support que je colorie avec des crayons de couleur.</p>
             </div>
 
-            <div data-aos="zoom-out-down" data-aos-duration="2000" className="header-picture">
+            <div data-aos="zoom-out-up" data-aos-duration="2000" className="header-picture">
                 <img className="picture" src={Isa} alt="Isabelle" />
                 <img className="picture2" src={Isa2} alt="Isabelle" />
             </div>
