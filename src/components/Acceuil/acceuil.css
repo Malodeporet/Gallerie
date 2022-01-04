@@ -21,6 +21,7 @@ p {
 }
 .second-p {
   margin-top: 10rem;
+  margin-bottom: 2.5rem;
 }
 .header-picture {
   display: flex;
@@ -34,11 +35,12 @@ p {
 .picture {
   max-width: 380px;
   max-height: 380px;
-  margin-right: 13rem;
+  margin-right: 11rem;
   position: absolute;
   border-radius: 10%;
   border: solid 1px white;
   filter: drop-shadow(0 0 0.2rem white);
+  padding: 0.3rem;
 }
 .picture2 {
   max-width: 300px;
@@ -48,6 +50,7 @@ p {
   border-radius: 50%;
   border: solid 1px white;
   filter: drop-shadow(0 0 0.2rem white);
+  padding: 0.3rem;
 }
 
 @media screen and (max-width: 1280px) {
@@ -102,7 +105,6 @@ p {
     flex-direction: column;
     margin: auto;
   }
-
   .first-p {
     margin: auto 0rem;
   }

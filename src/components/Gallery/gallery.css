@@ -80,9 +80,8 @@
   margin-bottom: 12px;
 }
 .gallery .pics:hover {
-  /* filter: opacity(.7); */
-  transform: scale(1.04);
-  transition: 1s ease-out;
+  transform: scale(1.08);
+  transition: 0.8s ease-out;
 }
 .dessin-poisson {
   display: inline;
@@ -90,8 +89,9 @@
 .dessin-oeuf img {
   height: 700px;
 }
-img {
+.gallery img {
   border-radius: 5%;
+  padding: 1.2rem;
 }
 .text-dentelle {
   font-family: "Roboto", sans-serif;

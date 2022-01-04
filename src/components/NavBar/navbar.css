@@ -7,20 +7,17 @@
   color: white;
   border-bottom: solid 1px grey;
 }
-
 .navbar-title {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   margin-right: 2rem;
 }
-
 h1 {
   font-size: 2.5rem;
   font-family: "Raleway", sans-serif;
   letter-spacing: 0.3vw;
 }
-
 .navbar-container {
   display: flex;
   flex-direction: row;
@@ -29,13 +26,11 @@ h1 {
   cursor: pointer;
   line-height: 25px;
 }
-
 p {
   font-size: 1.5rem;
   font-family: "Architects Daughter", cursive;
   letter-spacing: 0.2vw;
 }
-
 .nav-p {
   margin-left: 2rem;
 }
@@ -45,7 +40,6 @@ p {
   transition: 600ms;
   border-bottom: solid 1px #014a28;
 }
-
 .navbar-menu_container p {
   font-weight: 500;
   font-size: 18px;
@@ -53,7 +47,6 @@ p {
   margin: 0 1rem;
   cursor: pointer;
 }
-
 .navbar-menu_container {
   padding: 0.5rem 1rem;
   font-weight: 500;
@@ -64,14 +57,11 @@ p {
   cursor: pointer;
   border-radius: 5px;
 }
-
 .navbar-menu {
   margin-left: 1rem;
-
   display: none;
   position: relative;
 }
-
 .navbar-menu_container {
   display: flex;
   justify-content: flex-end;
@@ -90,7 +80,6 @@ p {
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
   z-index: 6;
 }
-
 .navbar-menu_container p {
   margin: 1rem 0;
 }
@@ -99,7 +88,6 @@ p {
   .navbar-container {
     display: none;
   }
-
   .navbar-menu {
     display: flex;
   }
@@ -115,7 +103,6 @@ p {
   .navbar {
     padding: 2rem;
   }
-
   .navbar-menu_container {
     top: 20px;
   }

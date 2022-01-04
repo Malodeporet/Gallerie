@@ -7,7 +7,7 @@ const Acceuil = () => {
     return (
         <div className="container">
             <div data-aos="fade-right" data-aos-duration="2000" className="presentation">
-                <p className='first-p'>Je suis <strong>dentellière</strong> du Point d'Alençon depuis 1989. Je travaille à l'Atelier National du Point d'Alençon et je réalise aussi des pièces personnelles.
+                <p className='first-p'>Je suis <strong>dentellière</strong> du <strong>Point d'Alençon</strong> depuis 1989. Je travaille à l'Atelier National du Point d'Alençon et je réalise aussi des pièces personnelles.
                     Je vous propose aujourd'hui de découvrir mes oeuvres au travers de mon site.
                 </p>
                 <p className='second-p'>Mes réalisations sont réparties en 3 catégories : </p>
@@ -15,8 +15,7 @@ const Acceuil = () => {
                 <p><strong>Dessin de dentelle :</strong> Je dessine à la plume avec une encre blanche.</p>
                 <p><strong>Dessin crayon de couleur :</strong> Je grave mon support que je colorie avec des crayons de couleur.</p>
             </div>
-
-            <div data-aos="zoom-out-up" data-aos-duration="2000" className="header-picture">
+            <div data-aos="fade-left" data-aos-duration="2000" className="header-picture">
                 <img className="picture" src={Isa} alt="Isabelle" />
                 <img className="picture2" src={Isa2} alt="Isabelle" />
             </div>
